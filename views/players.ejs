@@ -1,0 +1,61 @@
+<%- include("partials/header"); -%>
+
+
+<div style="background-color:#E8E8E8" class="container-fluid">
+  <div class="row">
+    <div style="background-color:#12a4d9" class="col-md-6 about-head">
+      <h2 class="details-heading">TEAMS & PLAYERS</h2>
+    </div>
+    <div class="col-md-6 ">
+      <hr>
+      <hr>
+    </div>
+    <div class="col-12 ">
+      <hr>
+      <hr>
+    </div>
+  </div>
+
+  <%  vTeams.forEach(function(team){ %>
+  <div style="background-color: #dc3d4b;" class="container-fluid">
+    <h3 class="team-headings">Team <%=team.teamName %> - <%= team.teamBranch%> - <%=team.year%> </h3>
+    <table class="table table-striped players-table table-borderless">
+      <tbody>
+        <tr>
+          <td><%=team.player1name%></td>
+          <td><%=team.player1valoid%></td>
+        </tr>
+        <tr>
+          <td><%=team.player2name%></td>
+          <td><%=team.player2valoid%></td>
+        </tr>
+        <tr>
+          <td><%=team.player3name%></td>
+          <td><%=team.player3valoid%></td>
+        </tr>
+        <tr>
+          <td><%=team.player4name%></td>
+          <td><%=team.player4valoid%></td>
+        </tr>
+        <tr>
+          <td><%=team.player5name%></td>
+          <td><%=team.player5valoid%></td>
+        </tr>
+        <tr>
+          <td><%=team.player6name%></td>
+          <td><%=team.player6valoid%></td>
+        </tr>
+        <tr>
+          <td><%=team.player7name%></td>
+          <td><%=team.player7valoid%></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr>
+  <% }) %>
+  
+  <hr>
+  <hr>
+</div>
+<%- include("partials/footer"); -%>

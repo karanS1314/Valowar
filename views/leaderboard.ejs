@@ -1,0 +1,236 @@
+<%- include("partials/header"); -%>
+
+<link href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+
+<div style="background-color:#E8E8E8;" class="container-fluid-leaderboard">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class=" col-lg-4 col-sm-12">
+        <hr>
+      </div>
+      <div style="background-color:#12a4d9" class="col-lg-6 col-sm-12 about-head">
+        <h2 class="details-heading">LEADERBOARD</h2>
+      </div>
+
+      <div class="col-12 ">
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 about-head">
+      <h2 class="details-heading">GROUP-A</h2>
+    </div>
+
+    <div class="col-md-6 ">
+      <hr>
+      <hr>
+    </div>
+    <div class="col-12 ">
+      <hr>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <table style="color: #042e27;" class="table table-striped">
+      <thead class="justify-content-center thead-players">
+        <tr>
+          <th>#</th>
+          <th>Team</th>
+          <th>Matches</th>
+          <th>Win</th>
+          <th>Lost</th>
+          <th>Tie</th>
+          <th>Points</th>
+          <th>Team Kills</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% let i=0;%>
+        <%  vTeams.forEach(function(team){ %>
+        <%if(team.teamGroup=="A") { %>
+        <%  i++;%>
+        <tr>
+          <th><%= i%></th>
+          <td><%=team.teamName%></td>
+          <td><%=team.teamMatch%></td>
+          <td><%=team.teamWins%></td>
+          <td><%=team.teamLoss%></td>
+          <td><%=team.teamTies%></td>
+          <td><%=team.teamPoints%></td>
+          <td><%=team.teamKills%></td>
+        </tr>
+        <% } %>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-md-6 about-head">
+      <h2 class="details-heading">GROUP-B</h2>
+    </div>
+    <div class="col-md-6 ">
+      <hr>
+      <hr>
+    </div>
+    <div class="col-12 ">
+      <hr>
+      <hr>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <table style="color: #042e27;" class="table table-striped">
+      <thead class="justify-content-center thead-players">
+        <tr>
+          <th>#</th>
+          <th>Team</th>
+          <th>Matches</th>
+          <th>Win</th>
+          <th>Lost</th>
+          <th>Tie</th>
+          <th>Points</th>
+          <th>Team Kills</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% let j=0;%>
+        <%  vTeams.forEach(function(team){ %>
+
+        <%if(team.teamGroup=="B") { %>
+        <%  j++;%>
+        <tr>
+          <th><%=j%></th>
+          <td><%=team.teamName%></td>
+          <td><%=team.teamMatch%></td>
+          <td><%=team.teamWins%></td>
+          <td><%=team.teamLoss%></td>
+          <td><%=team.teamTies%></td>
+          <td><%=team.teamPoints%></td>
+          <td><%=team.teamKills%></td>
+        </tr>
+        <% } %>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div style="background-color:	#20B2AA" class="col-md-6 about-head ">
+      <h2 class="details-heading">PLAYER RANKINGS</h2>
+    </div>
+    <div class="col-md-6 ">
+      <hr>
+    </div>
+    <div class="col-12 ">
+      <hr>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <table style="color: #042e27;" class="table table-striped table-borderless" id="sort">
+      <thead class="justify-content-center thead-players-ranking">
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Team</th>
+          <th>Valo-ID</th>
+          <th>Kills</th>
+          <th>Combat Score</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <%  vTeams.forEach(function(team){ %>
+
+        <tr>
+          <td></td>
+          <td><%=team.player1name%></td>
+          <td><%=team.teamName%></td>
+          <td><%=team.player1valoid%></td>
+          <td><%=team.player1kills%></td>
+          <td><%=team.player1score%></td>
+        </tr>
+        <tr>
+          <td></td>
+
+          <td><%=team.player2name%></td>
+          <td><%=team.teamName%></td>
+          <td><%=team.player2valoid%></td>
+          <td><%=team.player2kills%></td>
+          <td><%=team.player2score%></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><%=team.player3name%></td>
+          <td><%=team.teamName%></td>
+          <td><%=team.player3valoid%></td>
+          <td><%=team.player3kills%></td>
+          <td><%=team.player3score%></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><%=team.player4name%></td>
+          <td><%=team.teamName%></td>
+          <td><%=team.player4valoid%></td>
+          <td><%=team.player4kills%></td>
+          <td><%=team.player4score%></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><%=team.player5name%></td>
+          <td><%=team.teamName%></td>
+          <td><%=team.player5valoid%></td>
+          <td><%=team.player5kills%></td>
+          <td><%=team.player5score%></td>
+        </tr>
+        <%if(team.player6name) { %>
+
+        <tr>
+          <td></td>
+          <td><%=team.player6name%></td>
+          <td><%=team.teamName%></td>
+          <td><%=team.player6valoid%></td>
+          <td><%=team.player6kills%></td>
+          <td><%=team.player6score%></td>
+        </tr>
+        <% } %>
+        <%if(team.player7name) { %>
+
+        <tr>
+          <td></td>
+          <td><%=team.player7name%></td>
+          <td><%=team.teamName%></td>
+          <td><%=team.player7valoid%></td>
+          <td><%=team.player7kills%></td>
+          <td><%=team.player7score%></td>
+        </tr>
+        <% } %>
+        <% }) %>
+      </tbody>
+      <hr>
+    </table>
+    <hr>
+    <hr>
+    <hr>
+  </div>
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+<script src="/js/leaderboard.js" charset="utf-8"></script>
+
+
+<%- include("partials/footer"); -%>
