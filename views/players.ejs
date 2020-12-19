@@ -2,7 +2,7 @@
 
 
 <div style="background-color:#E8E8E8" class="container-fluid">
-  <div class="row">
+  <div class="row players-head">
     <div style="background-color:#12a4d9" class="col-md-6 about-head">
       <h2 class="details-heading">TEAMS & PLAYERS</h2>
     </div>
@@ -17,10 +17,10 @@
   </div>
 
   <%  vTeams.forEach(function(team){ %>
-  <div style="background-color: #dc3d4b;" class="container-fluid">
+  <div style="background-color: #ff4655;" class="container-fluid-players">
     <h3 class="team-headings">Team <%=team.teamName %> - <%= team.teamBranch%> - <%=team.year%> </h3>
     <table class="table table-striped players-table table-borderless">
-      <tbody>
+      <tbody class="players-body">
         <tr>
           <td><%=team.player1name%></td>
           <td><%=team.player1valoid%></td>
@@ -54,7 +54,12 @@
   </div>
   <hr>
   <% }) %>
-  
+  <% if(vTeams.length<=2){ %>
+    <div class="free-space">
+      .
+    </div>
+
+    <% } %>
   <hr>
   <hr>
 </div>

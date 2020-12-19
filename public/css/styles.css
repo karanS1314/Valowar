@@ -12,17 +12,20 @@
   padding: 7% 5% 0 7%;
 }
 /* Navbar style */
-
+.navbar-toggler{
+  color:white;
+  font-size: 1.6rem;
+}
 .navbar-brand {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 2.75rem;
+  font-size: 3rem;
   font-weight: bold;
   padding: 0.5rem 1rem 0 1rem;
 }
 
 .nav-item {
   padding: 0 0.5rem 0 0.5rem;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-family: 'Passion One', cursive;
 }
 .nav-link{
@@ -30,9 +33,15 @@
 }
 .navbar{
   background-color: black;
-  padding: 0.5rem 3rem;
+  padding: 1rem 5rem;
 }
-
+@media (max-width: 992px) {
+  .nav-item {
+    padding: 0 0.5rem 0 0.5rem;
+    font-size: 1.5rem;
+    font-family: 'Passion One', cursive;
+  }
+}
 /* title */
 .main-btn{
   padding-left: 2rem;
@@ -189,7 +198,7 @@ a:hover {
 p {
   font-family: 'Roboto', sans-serif;
   color: #E8E8E8;
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   padding-left: 4rem;
   padding-right: 4rem;
 }
@@ -208,21 +217,9 @@ p {
   left: 2px;
 }
 
-.btm-right-mid {
-  color: #F0F0F0;
-  border-radius: 2%;
-  padding: 0.8rem;
-  position: absolute;
-  text-align: center;
-  background-color: #fa4454;
-  margin-top: 8.8%;
-  margin-left: 80%;
-  margin-right: 2%;
-  top: 8.8px;
-  right: 2px;
-}
+
 .home-hr{
-  background-color: #E8E8E8;
+  background-color: #C0C0C0
 }
 .home-h2{
   font-family: 'Anton', sans-serif;
@@ -386,15 +383,35 @@ p {
 .players-table{
   text-align: left;
   color: #E8E8E8;
-
 }
-
+.container-fluid-players{
+  margin: 2rem 3rem;
+}
+.players-body{
+  text-align: center;
+}
+.players-head{
+  padding: 4rem 3rem;
+}
+.free-space{
+  padding: 20rem;
+  padding-bottom: 33rem;
+}
 /* success-page */
 .success-div{
   color: #696969;
-  padding: 20%;
+  padding: 20rem 5rem 45rem;
   height: auto;
   background-color: #E8E8E8;
+}
+@media (max-width:380px) {
+  .success-div{
+    color: #696969;
+    padding: 20rem 5rem 500rem;
+    height: auto;
+    background-color: #E8E8E8;
+  }
+
 }
 .success-msg-box{
   padding: 5%;
