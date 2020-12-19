@@ -38,7 +38,7 @@
 @media (max-width: 992px) {
   .nav-item {
     padding: 0 0.5rem 0 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: 'Passion One', cursive;
   }
 }
@@ -257,7 +257,17 @@ p {
 }
 .raze-img{
     width: 23rem;
-    margin: 0;
+    padding:0 ;
+}
+@media (min-width:991px) {
+  .raze-img{
+      margin-top: 6rem;
+      margin-bottom: 0;
+  }
+}
+.raze-img{
+    width: 23rem;
+    padding:0 ;
 }
 /* kills-mvp */
 #kills-mvp{
@@ -395,7 +405,7 @@ p {
 }
 .free-space{
   padding: 20rem;
-  padding-bottom: 33rem;
+  padding-bottom: 37rem;
 }
 /* success-page */
 .success-div{
