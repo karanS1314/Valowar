@@ -180,6 +180,12 @@ app.get("/success", function(req, res) {
   res.render("success");
 
 })
+app.get("/failure", function(req, res) {
+
+  res.render("failure");
+
+})
+
 app.get("/players", function(req, res) {
 
   Team.find({
