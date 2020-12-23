@@ -485,6 +485,9 @@ p {
     padding: 400px;
   }
 }
+.date-head{
+  color:#F0F0F0
+}
 /* leaderboard */
 .thead-players{
   color:#E8E8E8;

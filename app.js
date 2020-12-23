@@ -89,7 +89,7 @@ app.get("/leaderboard", function(req, res) {
   }).sort({
     teamPoints: -1
   }).sort({
-    teamKills: -1
+    teamKills: 1
   }).exec(function(err, verifiedTeams) {
     res.render("leaderboard", {
       vTeams: verifiedTeams
