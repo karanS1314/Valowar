@@ -1,8 +1,10 @@
 # Valowar Website
+Link : https://arcane-reaches-69657.herokuapp.com/
 
-![Valowar](/public/images/title-img.png)
+<!-- ![Valowar](/public/images/title-img.png) -->
 
-> This is a ReadMe template to help save you time and effort.
+<img src="/public/images/valo2.jpg" height="700"/>       <img src="/public/images/valo1.jpg" height="700"/>
+<img src="/public/images/valo4.jpg" height="700"/>       <img src="/public/images/valo5.jpg" height="700"/>
 
 ---
 
@@ -11,7 +13,7 @@ You're sections headers will be used to reference location of destination.
 
 - [Description](#description)
 - [How To Use](#how-to-use)
-- [License](#license)
+- [Future Plans](#future-plans)
 - [Author Info](#author-info)
 
 ---
@@ -20,7 +22,6 @@ You're sections headers will be used to reference location of destination.
 
 A fully developed website with backend in node.js and frontend in html, css and javascript with MongoDB made for the students of IIT Roorkee for a gaming competition organised by me and my friend. The site includes registration of students, a leaderboard that works dynamically after each data update and a responsive frontend.
 
-Link : https://arcane-reaches-69657.herokuapp.com/
 
 #### Technologies
 
@@ -28,7 +29,7 @@ Link : https://arcane-reaches-69657.herokuapp.com/
 - Backend in Express.JS, Node.js
 - Database in MongoDB
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#valowar-website)
 
 ---
 
@@ -76,7 +77,7 @@ Link : https://arcane-reaches-69657.herokuapp.com/
       $ node app.js
 
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#valowar-website)
 
 ---
 
@@ -89,16 +90,8 @@ Link : https://arcane-reaches-69657.herokuapp.com/
 
 ---
 
-## License
-
-Copyright (c) [2021] [Karan]
-
-[Back To The Top](#read-me-template)
-
----
-
 ## Author Info
 
 - LinkedIn - https://www.linkedin.com/in/gurkaran-singh-8563881b5/
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#valowar-website)
