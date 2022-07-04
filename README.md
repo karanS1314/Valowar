@@ -1,5 +1,5 @@
 # Valowar Website
-Link : https://arcane-reaches-69657.herokuapp.com/
+Link : https://valowar.herokuapp.com/
 
 <!-- ![Valowar](/public/images/title-img.png) -->
 
